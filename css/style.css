@@ -477,9 +477,13 @@ section.section-banner .bg-home{
     text-decoration: underline;
     font-style: italic;
 }
+.icon-help{
+    margin-top: 14px;
+}
 .icon-help p{
     font-size: 25px;
     line-height: 30px;
+    white-space: nowrap;
 }
 /* END HELP */
 
@@ -661,6 +665,9 @@ footer{
 /* RESPONSIVE */
 
 @media(max-width: 1199px){
+    .icon-help p{
+        white-space: normal;
+    }
     .container-custom-2{
         padding: 0 65px;
     }
@@ -708,6 +715,9 @@ footer{
     }
 }
 @media(max-width: 991px){
+    ul.list-menu.show {
+        box-shadow: -4px 6px 13px 0px #5c5d5757;
+    }
     .get-moti .title-1 h1, .get-moti .title-2 h1{
         font-size: 65px;
         line-height: 50px;
@@ -823,9 +833,6 @@ footer{
     .icon-help{
         align-items: end;
     }
-    .icon-help img{
-        margin-top: 24px;
-    }
     .section-video:after {
         border-radius: 100% 0% 100% 0% / 27% 80% 16% 50%;
     }
@@ -883,6 +890,9 @@ footer{
         width: 225px;
         height: 50px;
         font-size: 22px;
+    }
+    .icon-help{
+        margin-top: 0;
     }
     .icon-help img {
         filter: hue-rotate(-180deg);
@@ -990,7 +1000,7 @@ footer{
         border-radius: 100% 0% 100% 0% / 50% 50% 7% 50%;
     }
     .icon-help img{
-        margin-top: 14px;
+        margin-top: 10px;
     }
     .icon-help p{
         line-height: 38px;
@@ -1162,6 +1172,15 @@ footer{
         width: 60px;
         height: 60px;
         font-size: 40px;
+    }
+    .how-it img{
+        width: 70%;
+    }
+    .content-work-2 p {
+        font-size: 18px;
+    }
+    .content-works-1, .help-moti > div:first-child p, .icon-help p {
+        font-size: 22px;
     }
 }
 @media(min-width: 768px){
